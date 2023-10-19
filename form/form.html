@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+  <link rel="stylesheet" href="./global.css" />
+  <link rel="stylesheet" href="./form.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto Flex:wght@600;700&display=swap" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+
+
+</head>
+
+<body>
+  <div class="booking-form">
+    <div class="frame">
+      <img class="compositor-2-icon" alt="" src="./public/compositor-2@2x.png" />
+    </div>
+    <div class="frame1">
+      <div class="frame-parent">
+        <div class="frame2">
+          <div class="frame3">
+            <div class="frame4">
+              <div class="enter-your-information">Enter your information</div>
+            </div>
+            <div class="frame5">
+              <b class="personal-data">Personal Data</b>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="frame6">
+          <div class="your-name">Your name</div>
+          <input class="frame-child name" type="text" />
+
+
+        </div>
+        <div class="frame7">
+          <div class="your-e-mail-address">Your e-mail address</div>
+          <input class="frame-child email" type="email" type="submit" />
+
+
+        </div>
+        <div class="frame8">
+          <div class="enter-your-information">Phone number</div>
+          <input class="frame-child number" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+        </div>
+
+        <div class="frame9">
+          <div class="select-a-date-time">Select a date and time</div>
+          <input type="text" id="datetimepicker">
+        </div>
+        <div class="frame10">
+          <button class="confirm-wrapper" id="frameButton">
+            <b class="confirm"><a href="../confirmation/index.html">Confirm</a></b>
+          </button>
+        </div>
+
+        
+      </div>
+    </div>
+  </div>
+ 
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script>
+
+    const email = document.getElementsByClassName("frame-child email")[0];
+    const frameButton = document.getElementById("frameButton");
+
+    frameButton.addEventListener("click", function (e) {
+      e.preventDefault(); // Prevent form submission for now
+
+      const emailValue = email.value;
+      if (validateForm(emailValue)) {
+        // Save the email to localStorage
+        localStorage.setItem("userEmail", emailValue);
+        // Redirect to the next page
+        window.location.href = "../confirmation/index.html"; // Change this to your next page URL
+      }
+    });
+
+    function validateForm(emailValue) {
+      if (emailValue === "") {
+        alert("Please Insert Email");
+        return false;
+      }
+      return true; // Return true if validation passes
+    }
+    
+    const datetimepicker = flatpickr("#datetimepicker", {
+  enableTime: true,
+  dateFormat: "Y-m-d H:i",
+  onChange: function(selectedDates, dateStr, instance) {
+    localStorage.setItem("selectedDateTime", dateStr);
+  }
+});
+
+
+
+  </script>
+</body>
+
+</html>

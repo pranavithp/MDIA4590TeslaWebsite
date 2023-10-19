@@ -1,0 +1,261 @@
+.contact-us,
+.image-6 {
+  text-decoration: none;
+  position: absolute;
+  top: 0;
+}
+.image-6 {
+  left: 273px;
+  width: 57px;
+  height: 57px;
+  background-image: url(./public/image6@2x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.contact-us {
+  left: 1087px;
+  font-size: 12px;
+  font-weight: 700;
+  color: inherit;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 96px;
+  height: 37px;
+}
+.model-y {
+  position: absolute;
+  top: 120px;
+  left: 613px;
+  color: #767676;
+}
+.model-y1 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 216px;
+  left: 1233px;
+  font-size: 28px;
+  font-family: var(--font-roboto-flex);
+  color: var(--color-black);
+  text-align: center;
+  display: inline-block;
+}
+.advanced-autopilot-system {
+  position: absolute;
+  top: 151px;
+  left: calc(50% - 406px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 812px;
+  height: 149px;
+}
+.compositor-1-icon,
+.tesla-icon {
+  position: absolute;
+  max-height: 100%;
+}
+.compositor-1-icon {
+  height: 67.78%;
+  top: 25.33%;
+  bottom: 6.88%;
+  left: calc(50% - 630px);
+  width: 1260px;
+  object-fit: cover;
+}
+.tesla-icon {
+  height: 9.56%;
+  width: 53.28%;
+  top: 27.44%;
+  right: 23.38%;
+  bottom: 63%;
+  left: 23.33%;
+  max-width: 100%;
+  overflow: hidden;
+}
+.model-3,
+.model-x {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  font-size: var(--font-size-mini);
+  color: var(--color-gray-100);
+  display: inline-block;
+}
+.model-3 {
+  position: absolute;
+  top: 355px;
+  left: 1255px;
+  font-family: var(--font-roboto-flex);
+}
+.model-3:hover {
+  font-size: var(--font-size-xl);
+  color: var(--color-black);
+}
+.model-3,
+.model-3:active,
+.model-3:hover {
+  text-align: center;
+}
+.model-x {
+  top: 487px;
+  left: 1254px;
+}
+.model-s:hover,
+.model-x:hover {
+  font-size: var(--font-size-xl);
+  color: var(--color-black);
+}
+.model-s,
+.model-x,
+.order-now {
+  position: absolute;
+  font-family: var(--font-roboto-flex);
+  text-align: center;
+}
+.model-s {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  top: 619px;
+  left: 1254px;
+  font-size: var(--font-size-mini);
+  color: var(--color-gray-100);
+  display: inline-block;
+}
+.order-now {
+  top: 23px;
+  left: 71px;
+  font-size: var(--font-size-xl);
+  color: var(--color-black);
+}
+.order-now-wrapper {
+  cursor: pointer;
+  border: 1px solid var(--color-black);
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 166px;
+  left: 451px;
+  border-radius: var(--br-xs);
+  box-sizing: border-box;
+  width: 241px;
+  height: 70px;
+  overflow: hidden;
+}
+.order-now-wrapper:hover {
+  background-color: #d4d4d4;
+}
+.schedule-a-test {
+  position: absolute;
+  top: 23px;
+  left: 24px;
+  font-size: var(--font-size-xl);
+  font-family: var(--font-roboto-flex);
+  color: #b0b0b0;
+  text-align: center;
+}
+.schedule-a-test-drive-wrapper {
+  cursor: pointer;
+  border: 1px solid var(--color-black);
+  padding: 0;
+  background-color: var(--color-black);
+  position: absolute;
+  top: 166px;
+  left: 747px;
+  border-radius: var(--br-xs);
+  box-sizing: border-box;
+  width: 241px;
+  height: 70px;
+  overflow: hidden;
+}
+.schedule-a-test-drive-wrapper:hover {
+  background-color: #3b3b3b;
+}
+.frame-parent {
+  position: absolute;
+  top: 754px;
+  left: 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0), #5f5f5f);
+  width: 1440px;
+  height: 292px;
+  overflow: hidden;
+}
+.booking-form-child {
+  position: absolute;
+  top: 103px;
+  left: 1350px;
+  width: 2px;
+  height: 675px;
+}
+.booking-form-item {
+  position: absolute;
+  top: 226px;
+  left: 1342px;
+  border-radius: 50%;
+  background-color: var(--color-gainsboro);
+  width: 18px;
+  height: 18px;
+}
+.booking-form-item:hover {
+  border: 1px solid var(--color-black);
+  box-sizing: border-box;
+}
+.booking-form-item:active {
+  background-color: var(--color-darkgray-100);
+}
+.booking-form-child1,
+.booking-form-inner,
+.ellipse-div {
+  position: absolute;
+  left: 1344px;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+}
+.booking-form-inner {
+  top: 358px;
+  object-fit: cover;
+}
+.booking-form-inner:hover {
+  border: 1px solid var(--color-black);
+  box-sizing: border-box;
+}
+.booking-form-inner:active,
+.booking-form-inner:hover {
+  background-color: var(--color-darkgray-100);
+  width: 18px;
+  height: 18px;
+}
+.booking-form-child1,
+.ellipse-div {
+  top: 490px;
+  background-color: var(--color-gainsboro);
+}
+.booking-form-child1:hover,
+.ellipse-div:hover {
+  width: 18px;
+  height: 18px;
+  border: 1px solid var(--color-black);
+  box-sizing: border-box;
+}
+.booking-form-child1 {
+  top: 622px;
+}
+.booking-form {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  height: 1046px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-34xl);
+  color: var(--color-black);
+  font-family: var(--font-roboto-flex);
+}

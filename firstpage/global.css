@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-roboto-flex: "Roboto Flex";
+
+  /* font sizes */
+  --font-size-xl: 20px;
+  --font-size-mini: 15px;
+  --font-size-34xl: 53px;
+
+  /* Colors */
+  --color-gainsboro: #d9d9d9;
+  --color-black: #000;
+  --color-darkgray-100: #a6a6a6;
+  --color-gray-100: #838383;
+
+  /* Border radiuses */
+  --br-xs: 12px;
+}

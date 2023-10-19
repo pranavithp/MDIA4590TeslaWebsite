@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto Flex:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="confirmation">
+      <div class="frame">
+        <div class="frame1">
+          <a class="image-6"> </a>
+          <a class="contact-us">Contact Us</a>
+        </div>
+        <div class="frame2">
+          <img class="frame-icon" alt="" src="./public/frame.svg" />
+
+          <div class="frame3">
+            <b class="we-just-scheduled"
+              >We just scheduled a Demo Drive for you!</b
+            >
+            <div class="a-calendar-invitation">
+              A calendar invitation for your upcoming appointment has just been
+              sent to your email
+              <div id="displayEmail" class="email-value"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="frame4">
+        <div class="frame5">
+          <div class="frame-parent">
+
+            <div class="frame6" id="confirmation-message">
+              <div class="date">Date</div>
+              <b class="date1">October 21, 2023</b>
+              <div class="time">Time</div>
+              <b class="pm"></b>
+            </div>
+          </div>
+          <div class="frame8">
+            <a href="../index.html" class="get-back-home-wrapper">
+              <div class="get-back-home">Get back home</div>
+            </a>
+            
+            <button class="re-send-email">Re-send email</button>
+          </div>
+        </div>
+        <img class="frame-icon1" alt="" src="./public/frame1.svg" />
+      </div>
+    </div>
+
+    <script>
+      const getEmail = localStorage.getItem("userEmail");
+    
+      if (getEmail) {
+        document.getElementById("displayEmail").textContent = getEmail;
+      }
+    
+      const selectedTime = localStorage.getItem("selectedTime"); 
+    
+      if (selectedTime) {
+        const formattedTime = formatTime(selectedTime);
+        document.querySelector(".pm").textContent = formattedTime;
+      }
+
+      const selectedDate = localStorage.getItem("selectedDate");
+
+      if (selectedDate) {
+            document.getElementById("date1").textContent = selectedDate;
+        }
+
+    
+      function formatTime(selectedTime) {
+        const timeParts = selectedTime.split(":");
+        const hours = parseInt(timeParts[0], 10);
+        const minutes = timeParts[1];
+        const timeOfDay = hours >= 12 ? "PM" : "AM";
+        const formattedHours = hours % 12 || 12;
+        return `${formattedHours}:${minutes} ${timeOfDay}`;
+      }
+      function formatDateInWords(dateString) {
+  const options = { year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', hour12: true };
+  const formattedDate = new Date(dateString).toLocaleDateString(undefined, options);
+  return formattedDate;
+}
+
+const storedDateTime = localStorage.getItem("selectedDateTime");
+
+if (storedDateTime) {
+  const formattedDate = formatDateInWords(storedDateTime);
+  const confirmationElement = document.getElementById("confirmation-message");
+  confirmationElement.textContent = ` ${formattedDate}`;
+} else {
+  console.log("No Date-Time stored in local storage.");
+}
+    </script>
+    
+  </body>
+</html>
